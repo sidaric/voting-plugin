@@ -1,0 +1,78 @@
+/* Voting Section */
+#voting-section {
+  display: flex;
+  align-items: center;
+}
+
+#voting-section p,
+#voting-section button {
+  margin: 0;
+}
+
+#voting-section button {
+  margin-left: 10px;
+  border: 1px solid #E7E7E7;
+  cursor: pointer;
+  width: 80px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: stretch;
+  background: none;
+}
+
+#voting-section button:hover {
+  border-color: #666666;
+}
+
+.smiles {
+  width: 20px;
+  opacity: 0.5;
+}
+
+.voted img {
+  opacity: 1;
+}
+
+#voting-text {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#voting-section button.voted {
+  border: 2px solid #0A5EFF;
+}
+
+#voting-section button.not-voted {
+  border: none;
+}
+
+#voting-section button.not-voted img {
+  opacity: 1;
+}
+
+#voting-section button#vote-yes:hover .smiles,
+#voting-section button#vote-no:hover .smiles {
+  opacity: 1;
+}
+
+/* Display "Thank you for your feedback" and percentages */
+#voting-section p.thank-you {
+  font-weight: bold;
+}
+
+#voting-section p.vote-percent {
+  font-weight: bold;
+  border: 2px solid transparent;
+  padding: 5px;
+  margin: 5px 10px;
+}
+
+#voting-section p.vote-percent.voted {
+  border-color: blue;
+}
